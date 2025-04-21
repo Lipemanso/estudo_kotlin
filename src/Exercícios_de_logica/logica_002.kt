@@ -15,7 +15,8 @@ fun main(){
 
     fun media_aritmetica(a:Float, b:Float, c:Float){
         val media = (a+b+c)/3
-        return println("A média das notas $a, $b, $c é $media")
+        val media_reduzida = String.format("%.2f",media)
+        println("A média das notas $a, $b, $c é $media_reduzida")
     }
 media_aritmetica(nota1, nota2, nota3)
 }
